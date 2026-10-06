@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  /* Verdigris — light-first */
+  --color-paper:      #FFFFFF;
+  --color-bone:       #F1F5EF;
+  --color-ink:        #141F1B;
+  --color-ink-soft:   #48554F;
+  --color-ink-faint:  #78837C;
+  --color-verdigris:  #1A6B54;
+  --color-pine:       #10201B;
+  --color-patina:     #57BFA1;
+}
+
+html, body, #root { margin: 0; padding: 0; }
+body {
+  background: #FFFFFF;
+  color: #141F1B;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Global responsive safety */
+html, body, #root {
+  width: 100%;
+  min-width: 320px;
+  overflow-x: clip;
+}
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+*, *::before, *::after { box-sizing: border-box; }
+img, svg, video, canvas { max-width: 100%; }
+button, input, textarea, select { max-width: 100%; font: inherit; }
